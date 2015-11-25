@@ -1,0 +1,1 @@
+Learned AngularJS from ng-newsletter.com

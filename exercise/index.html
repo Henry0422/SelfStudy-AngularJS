@@ -4,20 +4,54 @@
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/angular.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/foundation.css"/>
+        <link rel="stylesheet" type="text/css" href="css/foundation.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <title>SelfStudy-AngularJS</title>
     </head>
-    <body>
-    <div class="title-bar">
-        <div class="title-bar-left">
-            <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-        </div>
-        <div style="horizontal-align: middle">
-            <span class="title-bar-title">Foundation</span>
-        </div>
-    </div>
+    <body class="panel">
+    <nav class="top-bar">
+      <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+          <h1><a href="#">SelfStudy-AngularJS</a></h1>
+        </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="divider"></li>
+          <li><a href="#">Exercise</a></li>
+          <li class="divider"></li>
+          <li class="has-dropdown"><a href="#">Main Item 3</a>
+
+            <ul class="dropdown">
+              <li><a href="#">ng-part1</a></li>
+              <li class="divider"></li>
+              <li><a href="#">ng-part2</a></li>
+              <li class="divider"></li>
+              <li><a href="#">ng-part3</a></li>
+              <li class="divider"></li>
+              <li><a href="#">ng-part5</a></li>
+              <li class="divider"></li>
+              <li><a href="#">ng-part6</a></li>
+            </ul>
+          </li>
+          <li class="divider"></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-form">
+            <a class="button" href="#">README</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
       
-    <div class="panel" style="padding: 0px 50px 50px 50px">
+    <div style="padding: 0px 50px 50px 50px">
         <h4>Scope Example 1</h4>
         <div ng-controller="MyController">
           {{ person.name }}
@@ -130,7 +164,7 @@
         <br>
 
         <div ng-controller="AlertWindow">
-            <h3>Example 10 - using ng-click to call a function</h3>
+            <h4>Example 10 - using ng-click to call a function</h4>
             <button ng-click="sayHello2()">Say hello</button>
         </div>
 
@@ -145,10 +179,10 @@
         <div>
             <button ng-init="shouldShow = true" ng-click="shouldShow = !shouldShow">Flip the shouldShow variable</button>
             <div ng-show="shouldShow">
-              <h3>Showing {{ shouldShow }}</h3>
+              <h5>Showing {{ shouldShow }}</h5>
             </div>
             <div ng-hide="shouldShow">
-              <h3>Hiding {{ shouldShow }}</h3>
+              <h5>Hiding {{ shouldShow }}</h5>
             </div>
         </div>
 
